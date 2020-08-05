@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 5rem;
+}
+.header-content{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.header-content-item{
+    padding: 0.7rem 1rem;
+    margin: 1.5rem 0.7rem;
+    cursor: pointer;
+}
+.header-logo{
+    padding: 0.7rem 1rem;
+    margin: 1.5rem;
+    cursor: pointer;
+}
