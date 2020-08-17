@@ -1,4 +1,6 @@
 .header{
+    position: relative;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,4 +21,57 @@
     padding: 0.7rem 1rem;
     margin: 1.5rem;
     cursor: pointer;
+}
+.headerHello{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    transform: rotate(25deg);
+    padding: 0.7rem 1rem;
+    width: 3.5rem;
+    height: 1.1rem;
+    border-radius: 10px 10px 10px 0;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: #1CD8D2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #EC6F66;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation-name: helloOpacityShow,helloOpacityRotation;
+    animation-duration:  0.5s, 2s;
+    animation-iteration-count: 1, infinite;
+    cursor: default;
+}
+.helloText{
+    animation: helloOpacityShowText 0.53s;
+    color: #fff;
+}
+@keyframes helloOpacityShow{
+    0%{
+        opacity: 0;
+        height: 1px;
+        width: 1px;
+    }
+    100%{
+        opacity: 1;
+        height: 1.1rem;
+        width: 3.5rem;
+    }
+}
+@keyframes helloOpacityRotation{
+    50%{
+        transform: rotate(15deg);
+    }
+}
+@keyframes helloOpacityShowText{
+    0%{
+        font-size: 0.2rem;
+    }
+    100%{
+        font-size: 1rem;
+    }
 }

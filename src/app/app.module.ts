@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { BlogPageComponent } from './pages/blog-page/blog-page.component';
     HeaderComponent,
     ErrorPageComponent,
     HomePageComponent,
-    BlogPageComponent
+    BlogPageComponent,
+    PortfolioPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

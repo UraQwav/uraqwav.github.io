@@ -1,0 +1,23 @@
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 5rem;
+}
+.error-animation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.error-face{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3rem;
+}
+.error-img img{
+   
+}
+.content button{
+    text-decoration: none;
+}
