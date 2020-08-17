@@ -1,23 +1,29 @@
 <div class="header">
     <div class="header-logo">
-        <a  (mouseover)="headerHello=true" (mouseout)="headerHello=false" [routerLink]="['home']">UraQwav</a>
+        <a  (mouseover)="headerHello=true" (mouseout)="headerHello=false" [routerLink]="['home']" [style.color]="ategThemeCollor">UraQwav</a>
         <div @opacityLeaveHello  *ngIf="headerHello" class="headerHello" [routerLink]="['home']">
             <div class="helloText">Hello&nbsp;:&nbsp;)</div>
         </div>
     </div>
     <div class="header-content">
         <div class="header-content-item">
-            <a [routerLink]="['home']">Home</a>
+            <a [routerLink]="['home']" [style.color]="ategThemeCollor">Home</a>
         </div>
         <div class="header-content-item">
-            <a [routerLink]="['blog']">My blog</a>
+            <a [routerLink]="['blog']" [style.color]="ategThemeCollor">My blog</a>
         </div>
         
         <div class="header-content-item">
-            <a [routerLink]="['portfolio']">Portfolio</a>
+            <a [routerLink]="['portfolio']" [style.color]="ategThemeCollor">Portfolio</a>
         </div>
         <div class="header-content-item">
-            <a href="assets/documents/Urevich_CV.pdf" download >My CV</a>
+            <a href="assets/documents/Urevich_CV.pdf" download [style.color]="ategThemeCollor">My CV</a>
+        </div>
+        <div class="header-content-item">
+            <div class="circle-theme" (click)="changeTheme()" [style.borderColor]="ategThemeCollor"></div>
+            <div *ngIf="changeThemeColor" class="theme-change-circle" [style.background]="ThemeCollorBackground"></div>
+            <div *ngIf="!changeThemeColor" class="theme-change-circle" [style.background]="ThemeCollorBackground"></div>
+        
         </div>
     </div>
 </div>
