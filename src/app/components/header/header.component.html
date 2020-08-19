@@ -20,7 +20,10 @@
             <a href="assets/documents/Urevich_CV.pdf" download [style.color]="ategThemeCollor">My CV</a>
         </div>
         <div class="header-content-item">
-            <div class="circle-theme" (click)="changeTheme()" [style.borderColor]="ategThemeCollor"></div>
+            <div class="circle-theme" (click)="changeTheme()" [style.borderColor]="ategThemeCollor">
+                <div class="circle-theme-marker" [style.background]="Collor"></div>
+                <div class="circle-theme-marker" [style.background]="ategThemeCollor"></div>
+            </div>
             <div *ngIf="changeThemeColor" class="theme-change-circle" [style.background]="ThemeCollorBackground"></div>
             <div *ngIf="!changeThemeColor" class="theme-change-circle" [style.background]="ThemeCollorBackground"></div>
         

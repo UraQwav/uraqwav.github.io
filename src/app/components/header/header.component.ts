@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
 
   headerHello:boolean;
   changeThemeColor:boolean;
+  Collor = '#fff';
   ategThemeCollor;
   ThemeCollorBackground;
   constructor(private elementRef: ElementRef) {
@@ -42,11 +43,13 @@ export class HeaderComponent implements OnInit {
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#fff';
     this.elementRef.nativeElement.ownerDocument.body.style.color = '';
     this.ategThemeCollor = '';
+    this.Collor = '#fff';
   }
   blackTheme():any{
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#36383b';
     this.elementRef.nativeElement.ownerDocument.body.style.color = '#fff';
     this.ategThemeCollor = '#fff';
+    this.Collor = '#000';
   }
  
 }
