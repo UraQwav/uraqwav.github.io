@@ -77,7 +77,7 @@
 .home-content-item-priview-right img{
     padding-top: 20px;
     height: 100%;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     /* transform: rotate(-38deg); */
 }
 .priview-contact{
