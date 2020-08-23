@@ -1,0 +1,46 @@
+.my-skils{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-top: 15px;
+    width: 400px;
+    cursor: pointer;
+}
+.right-content{
+    position: absolute;
+    right: 20%;
+    width: 375px;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.item:hover{
+    transition: 0.5s;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.item-title{
+    font-size: 1.5rem;
+    color: #EC6F66;
+}
+.item-info{
+    margin-top: 0.5rem;
+}
+.item-link{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}

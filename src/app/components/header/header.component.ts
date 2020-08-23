@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, Directive, Input } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, Directive, Input, AfterViewInit } from '@angular/core';
 import { trigger, transition, animate, style } from '@angular/animations';
 
 @Component({
@@ -14,29 +14,40 @@ import { trigger, transition, animate, style } from '@angular/animations';
   ]
 })
 
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
 
   headerHello:boolean;
   changeThemeColor:boolean;
   Collor = '#fff';
   ategThemeCollor;
   ThemeCollorBackground;
+  elements;
   constructor(private elementRef: ElementRef) {
     this.headerHello = false;
     this.changeThemeColor = false;
+    if(localStorage.getItem('Theme-color') !== null){
+      this.changeThemeColor = true;
+      this.blackTheme();
+    }
   }
   ngOnInit(): void {
+  }
+  ngAfterViewInit(): void {
+   this.elements = this.elementRef.nativeElement.querySelectorAll('.item');
+   
   }
   changeTheme(){
     if(this.changeThemeColor == false){
       this.changeThemeColor = true;
       setTimeout(()=>this.blackTheme(),712);
       this.ThemeCollorBackground = '#36383b';
+      localStorage.setItem('Theme-color', 'black');
     }
     else{
       this.changeThemeColor = false;
       setTimeout(()=>this.whiteTheme(),712);
       this.ThemeCollorBackground = '#fff';
+      localStorage.removeItem('Theme-color');
     }
   }
   whiteTheme():any{
@@ -44,6 +55,7 @@ export class HeaderComponent implements OnInit {
     this.elementRef.nativeElement.ownerDocument.body.style.color = '';
     this.ategThemeCollor = '';
     this.Collor = '#fff';
+    this.elements.nativeElement.style.backgroundColor = '#dc134c';
   }
   blackTheme():any{
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#36383b';

@@ -10,6 +10,9 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
+import { MySkilsComponent } from './components/for-home-page/my-skils/my-skils.component';
+import { SomeMyWorkComponent } from './components/for-home-page/some-my-work/some-my-work.component';
+import { MyStudyComponent } from './components/for-home-page/my-study/my-study.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.co
     ErrorPageComponent,
     HomePageComponent,
     BlogPageComponent,
-    PortfolioPageComponent
+    PortfolioPageComponent,
+    MySkilsComponent,
+    SomeMyWorkComponent,
+    MyStudyComponent
   ],
   imports: [
     BrowserModule,

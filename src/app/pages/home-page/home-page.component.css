@@ -44,8 +44,12 @@
     justify-content: space-between;
     align-items: center;
     height: 45vh;
-    max-width: 1300px;
+    width: 85vw;
     margin-top: 2rem;
+}
+.skils{
+    width: 100%;
+    margin-bottom: 25px;
 }
 .priview-title{
     font-size: 3rem;
