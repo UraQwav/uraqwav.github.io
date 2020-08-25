@@ -12,17 +12,28 @@
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     margin-top: 15px;
-    width: 400px;
     cursor: pointer;
 }
 .right-content{
-    position: absolute;
-    right: 20%;
-    width: 375px;
+    
 }
 .right{
     display: flex;
     align-items: center;
+    width: 40%;
+    margin: 1rem;
+    justify-content: center;
+    flex-direction: column;
+}
+.introduction{
+    display: flex;
+    justify-content: flex-start;
+    color: #85868a;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+h1{
+    margin-bottom: 1rem;
 }
 .item:hover{
     transition: 0.5s;

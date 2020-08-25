@@ -8,12 +8,15 @@ import { trigger, transition, animate, style } from '@angular/animations';
   animations: [
     trigger('opacityLeave', [
       transition(':enter', [
-        style({ transform: 'translateX(100%)' }),
-        animate('0.5s 300ms ease-in')
-      ]),
-      transition(':leave', [
-        animate('0.5s', style({opacity: 0}))
+        style({opacity: 0}),
+        animate(600 )
+        // style({ transform: 'translateX(100%)' }),
+        // animate('0.5s 300ms ease-in')
       ])
+      // ,
+      // transition(':leave', [
+      //   animate('0.5s', style({opacity: 0}))
+      // ])
      ])
   ]
 })
