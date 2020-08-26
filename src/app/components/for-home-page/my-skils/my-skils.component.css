@@ -1,6 +1,5 @@
 .my-skils{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .item{
@@ -14,16 +13,15 @@
     margin-top: 15px;
     cursor: pointer;
 }
-.right-content{
-    
+.right-content div{
+    margin-top: 1rem;
 }
 .right{
     display: flex;
-    align-items: center;
     width: 40%;
     margin: 1rem;
-    justify-content: center;
     flex-direction: column;
+    margin-left: 4rem;
 }
 .introduction{
     display: flex;
@@ -54,4 +52,20 @@ h1{
 .item-link{
     margin-top: 1rem;
     font-size: 0.8rem;
+}
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    background: #EC6F66;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 125px;
+    cursor: pointer;
+}
+.view a{
+    color:#fff;
 }

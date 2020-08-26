@@ -9,9 +9,10 @@ import { trigger, transition, animate, style } from '@angular/animations';
     trigger('opacityLeave', [
       transition(':enter', [
         style({opacity: 0}),
-        animate(600 )
-        // style({ transform: 'translateX(100%)' }),
-        // animate('0.5s 300ms ease-in')
+        
+        style({ transform: 'translateX(25%)' }),
+        // animate(600 )
+        animate('0.5s ease-in')
       ])
       // ,
       // transition(':leave', [
