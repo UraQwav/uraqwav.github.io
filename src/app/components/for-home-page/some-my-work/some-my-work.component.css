@@ -1,5 +1,6 @@
 .work{
    width: 86.5%;
+   margin-top: 3rem;
 }
 .title{
     margin-top: 2rem;
@@ -13,7 +14,7 @@
 }
 .work-content{
     max-width: 800px;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -71,4 +72,22 @@
     border-radius: 5px;
     font-size: 0.8rem;
     height: 1rem;
+}
+.allpproject{
+    height: 45vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.allpproject a{
+    font-size: 2rem;
+    color: #EC6F66;
+    text-decoration: underline;
+}
+.all-project-some-info{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #85868a;
 }

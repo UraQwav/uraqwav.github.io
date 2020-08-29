@@ -1,0 +1,48 @@
+.study{
+    display: flex;
+    flex-direction: column;
+}
+.study-div{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+.study-div-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.study-info-item{
+    width: 30vw;
+    margin: 0.5rem;
+}
+.study-div-content{
+    margin: 3rem 0;
+}
+.title{
+    font-size: 2.5rem;
+    width: 25vw;
+}
+.title-info{
+    font-size: 0.9rem;
+    color: #85868a;
+    width: 25vw;
+    margin: 0.5rem;
+}
+.title-color-year{
+    font-size: 1.7rem;
+    color: #EC6F66;
+    width: 30vw;
+}
+.study-info{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.study-info-title{
+    font-size: 1rem;
+}
+.study-info-text{
+    color: #85868a;
+}

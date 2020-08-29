@@ -61,7 +61,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#36383b';
     this.elementRef.nativeElement.ownerDocument.body.style.color = '#fff';
     this.ategThemeCollor = '#fff';
-    this.Collor = '#000';
+    this.Collor = '#36383b';
   }
  
 }
