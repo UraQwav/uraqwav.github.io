@@ -20,7 +20,7 @@
     flex-direction: column;
 }
 .work-content .work-example{
-    height: 45vh;
+    height: 20vw;
     width: 30vw;
 }
 .work-content .title{
@@ -85,9 +85,49 @@
     font-size: 2rem;
     color: #EC6F66;
     text-decoration: underline;
+    cursor: pointer;
 }
 .all-project-some-info{
     margin-top: 2rem;
     font-size: 0.8rem;
     color: #85868a;
+}
+.mobilework{
+    display:none;
+}
+@media only screen and (max-width: 1000px) {
+    .work-content{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .work-content .title{
+        height: auto;
+    }
+    .laptopwork{
+        display: none;
+    }
+    .mobilework{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .allpproject{
+        height: auto;
+        margin: 4rem 0;
+    }
+    .work-example{
+        margin-right:0;
+        width:60vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .work-example{
+        margin-right:0;
+        width:85vw;
+    }
+    .work{
+        width: auto;
+    }
 }

@@ -69,3 +69,22 @@ h1{
 .view a{
     color:#fff;
 }
+.mobile{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .my-skils{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mobile{
+        display: flex;
+    }
+    .laptop{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        margin: 1.5rem;
+    }
+}

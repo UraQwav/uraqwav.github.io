@@ -16,6 +16,29 @@
 .error-table-hidden{
     visibility: hidden;
 }
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    background: #EC6F66;
+    border-radius: 10px;
+    min-width: 150px;
+}
+.error-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content button{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    background: none;
+    border:none;
+}
 .error-table{
     visibility: visible;
     display: flex;
@@ -50,6 +73,11 @@
 .content button{
     text-decoration: none;
 }
+.img-error{
+    display: flex;
+    flex:1;
+
+}
 @keyframes errorFace{
     0%{
         transform: scale(1,1);
@@ -81,4 +109,19 @@
 }
 button{
     text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+   .error{
+       justify-content: center;
+       flex-direction: column;
+       overflow: hidden;
+       height: auto;
+       margin: 0;
+   }
+   .error-animation{
+       margin-top: 5rem;
+   }
+   .content{
+   margin-bottom: 5rem;
+   }
 }

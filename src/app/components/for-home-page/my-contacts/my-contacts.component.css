@@ -1,0 +1,30 @@
+.contacts{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.contacts-title{
+    font-size: 2.5rem;
+    width: 25vw;
+}
+.contacts-item-text{
+    color: #85868a;
+    
+    margin: 0 1rem;
+}
+.contacts-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45%;
+    margin:1rem;
+}
+.contacts-item-img{
+    margin: 0 1rem;
+}
+.contacts-content{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}

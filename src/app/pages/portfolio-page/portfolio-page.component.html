@@ -1,1 +1,28 @@
-<p>portfolio-page works!</p>
+<div class="portfolio-page">
+    <div class="portfolio-page-title"></div>
+    <div class="portfolio-page-content">
+        <div class="portfolio-page-content-item" *ngFor="let item of items; index as i; first as isFirst">
+            <a  href="{{item.link}}" class="portfolio-page-content-item-image">
+                <img src="{{item.imagePath}}" alt="">
+                <div class="portfolio-page-content-item-image-info">
+                    <div class="portfolio-page-content-item-info-name">{{item.name}}</div>
+                    <div class="portfolio-page-content-item-info-like">
+                        <img src="assets/images/icons8_heart_outline_24px.png" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="portfolio-page-content-item-info">
+                <div class="portfolio-page-content-item-info-publisher">
+                    <div class="my-avatar">
+                        <img src="assets/images/home/me.png" alt="">
+                    </div>
+                    <div class="portfolio-page-content-item-info-text">Ura_Qwav</div>
+                </div>
+                <div class="portfolio-page-content-item-info-publisher-like">
+                    <img src="assets/images/icons8_heart_outline_24px.png" alt="">
+                    <div class="number">150</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

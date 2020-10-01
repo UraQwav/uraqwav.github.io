@@ -106,3 +106,17 @@
 .education{
     width: 85%;
 }
+.contacts{
+    width: 85%;
+}
+@media only screen and (max-width: 900px) {
+    .home-content-item-priview-right{
+        display: none;
+    }
+    .home-content-item-priview-left{
+        margin: 0 0.5rem;
+    }
+    .work{
+        width: auto;
+    }
+}

@@ -6,17 +6,17 @@
         </div>
     </div>
     <div class="header-content">
-        <div class="header-content-item">
+        <div class="header-content-item laptopheader">
             <a [routerLink]="['home']" [style.color]="ategThemeCollor">Home</a>
         </div>
-        <div class="header-content-item">
+        <div class="header-content-item laptopheader">
             <a [routerLink]="['blog']" [style.color]="ategThemeCollor">My blog</a>
         </div>
         
-        <div class="header-content-item">
+        <div class="header-content-item laptopheader">
             <a [routerLink]="['portfolio']" [style.color]="ategThemeCollor">Portfolio</a>
         </div>
-        <div class="header-content-item">
+        <div class="header-content-item laptopheader">
             <a href="assets/documents/Urevich_CV.pdf" download [style.color]="ategThemeCollor">My CV</a>
         </div>
         <div class="header-content-item">
@@ -27,6 +27,28 @@
             <div *ngIf="changeThemeColor" class="theme-change-circle" [style.background]="ThemeCollorBackground"></div>
             <div *ngIf="!changeThemeColor" class="theme-change-circle" [style.background]="ThemeCollorBackground"></div>
         
+        </div>
+        <div class="menu">
+            <div class="div-menu-burger" (click)="menu()">
+                <div class="div-menu-bar-f"  [style.background]="ategThemeCollor"  [class.div-menu-bar-f-anim]="ismenu"></div>
+                <div class="div-menu-bar-t"  [style.background]="ategThemeCollor"  [class.div-menu-bar-t-anim]="ismenu"></div>
+                <div class="div-menu-bar-th" [style.background]="ategThemeCollor" [class.div-menu-bar-th-anim]="ismenu"></div>
+            </div>
+            <div [class.nav-menu-hidden]="!ismenu" [class.nav-menu]="ismenu" [style.background]="ThemeCollorBackground">
+                <div class="header-content-item">
+                    <a [routerLink]="['home']" (click)="menu()" [style.color]="ategThemeCollor">Home</a>
+                </div>
+                <div class="header-content-item">
+                    <a [routerLink]="['blog']" (click)="menu()" [style.color]="ategThemeCollor">My blog</a>
+                </div>
+                
+                <div class="header-content-item">
+                    <a [routerLink]="['portfolio']" (click)="menu()" [style.color]="ategThemeCollor">Portfolio</a>
+                </div>
+                <div class="header-content-item">
+                    <a href="assets/documents/Urevich_CV.pdf" (click)="menu()" download [style.color]="ategThemeCollor">My CV</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

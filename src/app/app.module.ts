@@ -13,6 +13,7 @@ import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.co
 import { MySkilsComponent } from './components/for-home-page/my-skils/my-skils.component';
 import { SomeMyWorkComponent } from './components/for-home-page/some-my-work/some-my-work.component';
 import { MyStudyComponent } from './components/for-home-page/my-study/my-study.component';
+import { MyContactsComponent } from './components/for-home-page/my-contacts/my-contacts.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MyStudyComponent } from './components/for-home-page/my-study/my-study.c
     PortfolioPageComponent,
     MySkilsComponent,
     SomeMyWorkComponent,
-    MyStudyComponent
+    MyStudyComponent,
+    MyContactsComponent
   ],
   imports: [
     BrowserModule,

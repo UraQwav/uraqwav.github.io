@@ -8,6 +8,17 @@
             </div>
             <div class="item-image"></div>
         </div>
+        <div class="right mobile">
+            <div @opacityLeave *ngIf="flagSkilOne" class="right-content">
+                <div class="introduction">Introduce</div>
+                <h1>Front-end</h1>
+                <div>Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data. </div> 
+                <div>Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data. </div> 
+                <div class="view">
+                    <a (click)="front()">View my work</a>
+                </div>
+            </div>
+        </div>
         <div class="item" (mouseover)="skilTwo()">
             <div class="item-content">
                 <div class="item-title">Back-End</div>
@@ -15,6 +26,17 @@
                 <div class="item-link">Progect</div>
             </div>
             <div class="item-image"></div>
+        </div>
+        <div class="right mobile">
+            <div @opacityLeave *ngIf="flagSkilTwo" class="right-content">
+                <div class="introduction">Introduce</div>
+                <h1>Back-end</h1>
+                <div>A back-end web developer is responsible for server-side web application logic and integration of the work front-end developers do. Back-end developers are usually write the web services and APIs used by front-end developers and mobile application developers.</div> 
+                <div>A back-end web developer is responsible for server-side web application logic and integration of the work front-end developers do. Back-end developers are usually write the web services and APIs used by front-end developers and mobile application developers.</div> 
+                <div class="view">
+                    <a href="https://github.com/uraqwav/">View my work</a>
+                </div>
+            </div>
         </div>
         <div class="item" (mouseover)="skilThree()">
             <div class="item-content">
@@ -24,6 +46,17 @@
             </div>
             <div class="item-image"></div>
         </div>
+        <div class="right mobile">
+            <div @opacityLeave *ngIf="flagSkilThree" class="right-content">
+                <div class="introduction">Introduce</div>
+                <h1>Design</h1>
+                <div>A designer is a person who plans the look or workings of something prior to it being made, by preparing drawings or plans. More formally, a designer is an agent that "specifies the structural properties of a design object". </div> 
+                <div>A designer is a person who plans the look or workings of something prior to it being made, by preparing drawings or plans. More formally, a designer is an agent that "specifies the structural properties of a design object". </div> 
+                <div class="view">
+                    <a (click)="front()">View my work</a>
+                </div>
+            </div>
+        </div>
         <div class="item" (mouseover)="skilFour()">
             <div class="item-content">
                 <div class="item-title">Sequrity</div>
@@ -32,37 +65,45 @@
             </div>
             <div class="item-image"></div>
         </div>
+        <div class="right mobile">
+            <div @opacityLeave *ngIf="flagSkilFoyr" class="right-content">
+                <div class="introduction">Introduce</div>
+                <h1>Sequrity</h1>
+                <div>Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.</div> 
+                <div>Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.</div> 
+            </div>
+        </div>
     </div>
-    <div class="right">
+    <div class="right laptop">
         <div class="introduction">Introduce</div>
         <div @opacityLeave *ngIf="flagSkilOne" class="right-content">
             <h1>Front-end</h1>
-            <div>F desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
-            <div>F desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
+            <div>Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data. </div> 
+            <div>Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data. </div> 
             <div class="view">
-                <a>View my work</a>
+                <a (click)="front()">View my work</a>
             </div>
         </div>
         <div @opacityLeave *ngIf="flagSkilTwo" class="right-content">
             <h1>Back-end</h1>
-            <div>B desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
-            <div>B desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
+            <div>A back-end web developer is responsible for server-side web application logic and integration of the work front-end developers do. Back-end developers are usually write the web services and APIs used by front-end developers and mobile application developers.</div> 
+            <div>A back-end web developer is responsible for server-side web application logic and integration of the work front-end developers do. Back-end developers are usually write the web services and APIs used by front-end developers and mobile application developers.</div> 
             <div class="view">
-                <a>View my work</a>
+                <a href="https://github.com/uraqwav/">View my work</a>
             </div>
         </div>
         <div @opacityLeave *ngIf="flagSkilThree" class="right-content">
             <h1>Design</h1>
-            <div>D desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
-            <div>D desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
+            <div>A designer is a person who plans the look or workings of something prior to it being made, by preparing drawings or plans. More formally, a designer is an agent that "specifies the structural properties of a design object". </div> 
+            <div>A designer is a person who plans the look or workings of something prior to it being made, by preparing drawings or plans. More formally, a designer is an agent that "specifies the structural properties of a design object". </div> 
             <div class="view">
-                <a>View my work</a>
+                <a (click)="front()">View my work</a>
             </div>
         </div>
         <div @opacityLeave *ngIf="flagSkilFoyr" class="right-content">
             <h1>Sequrity</h1>
-            <div>S desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
-            <div>S desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div> 
+            <div>Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.</div> 
+            <div>Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.</div> 
         </div>
     </div>
 </div>

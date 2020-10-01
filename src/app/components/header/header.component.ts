@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   ategThemeCollor;
   ThemeCollorBackground;
   elements;
+  ismenu:Boolean=false;
   constructor(private elementRef: ElementRef) {
     this.headerHello = false;
     this.changeThemeColor = false;
@@ -63,5 +64,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.ategThemeCollor = '#fff';
     this.Collor = '#36383b';
   }
- 
+  menu(){
+    if(this.ismenu==false)
+      this.ismenu = true;
+    else this.ismenu = false;
+  }
 }

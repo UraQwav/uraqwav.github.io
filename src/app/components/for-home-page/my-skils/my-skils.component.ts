@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, animate, style } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-my-skils',
@@ -28,7 +29,7 @@ export class MySkilsComponent implements OnInit {
   flagSkilThree: boolean;
   flagSkilFoyr: boolean;
 
-  constructor() { 
+  constructor(public router:Router) { 
     this.flagSkilOne = true;
     this.flagSkilTwo = false;
     this.flagSkilThree = false;
@@ -64,5 +65,8 @@ export class MySkilsComponent implements OnInit {
     this.flagSkilTwo = false;
     this.flagSkilThree = false;
     this.flagSkilFoyr = true;
+  }
+  front(){
+    this.router.navigate(["portfolio"])
   }
 }

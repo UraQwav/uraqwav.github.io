@@ -1,0 +1,97 @@
+.portfolio-page-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 5rem;
+}
+.portfolio-page-content-item{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    min-width: 400px;
+    min-height: 300px;
+    margin:1rem;
+    
+}
+.portfolio-page-content-item-image{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.portfolio-page-content-item-image img{
+    width: 100%;
+}
+.portfolio-page-content-item-info-like{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: #ececec;
+    border-radius: 3px;
+}
+.portfolio-page-content-item-info-like img, .portfolio-page-content-item-info-publisher-like img{
+    filter: contrast(0%);
+    width: 20px;
+}
+.portfolio-page-content-item-image-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+    color:#fff;
+    font-weight: 700;
+    margin-top:-65px;
+    height: 60px;
+    opacity: 0;
+    transition: 0.5s;
+    background: #00000070;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #00000083, #0000000a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #00000083, #0000000a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.portfolio-page-content-item-image:hover .portfolio-page-content-item-image-info{
+    opacity: 1;
+    transition: 0.5s;
+}
+.portfolio-page-content-item-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio-page-content-item-info-publisher{
+    display:flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.my-avatar{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ececec;
+}
+.my-avatar img{
+    width: 100%;
+}
+.portfolio-page-content-item-info-publisher-like{
+    display: flex;
+    align-items: center;
+    /* color:#797979; */
+}
+.number, .portfolio-page-content-item-info-text{
+    margin: 0 0.7rem;
+    /* color:#797979; */
+}
+@media only screen and (max-width: 800px) {
+    .portfolio-page-content-item{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        min-width: 320px;
+        min-height: 220px;
+        margin:1rem;
+    }
+}

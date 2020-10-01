@@ -102,6 +102,7 @@
     height: 25vh;
     width: 25vh; 
     cursor: default;
+    z-index: 100;
 }
 
 @keyframes circleAnimationTheme{
@@ -115,5 +116,66 @@
     100%{
         
         opacity: 0;
+    }
+}
+.menu{
+    display:none;
+}
+.nav-menu-hidden{
+    display:none;
+}
+.div-menu-bar-f-anim{
+    transform: rotateZ(45deg) translate(45%);
+    transition: 0.5s;
+}
+.div-menu-bar-th-anim{
+    transform: rotateZ(-45deg) translate(45%);
+    transition: 0.5s;
+}
+.div-menu-bar-t-anim{
+    transform: rotateY(90deg);
+    transition: 0.5s;
+}
+@media only screen and (max-width: 800px) {
+    .laptopheader{
+        display:none;
+    }
+    .menu{
+        display:flex;
+        flex-direction: column;
+    }
+    .div-menu-burger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 99;
+    }
+    .div-menu-bar-f,.div-menu-bar-t,.div-menu-bar-th{
+        width: 24px;
+        height: 2px;
+        border-radius: 1px;
+        transition: 0.5s;
+        margin:2px;
+        background: #000;
+    }
+    .nav-menu{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top:0;
+        left:0;
+        background: #fff;
+    }
+    .header{
+        margin: 1rem 1rem;
+    }
+    .header-logo{
+        margin: 0;
     }
 }
